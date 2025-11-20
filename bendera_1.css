@@ -1,0 +1,71 @@
+body {
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.flag {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Salib besar tengah */
+.cross-vertical,
+.cross-horizontal {
+  position: absolute;
+  background: red;
+}
+
+.cross-vertical {
+  width: 60px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cross-horizontal {
+  height: 60px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Salib kecil */
+.small-cross {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.small-cross div {
+  position: absolute;
+  background: red;
+}
+
+.small-cross .v {
+  width: 10px;
+  height: 40px;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.small-cross .h {
+  width: 40px;
+  height: 10px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Posisi salib kecil */
+.top-left     { top: 65px; left: 115px; }
+.top-right    { top: 65px; right: 115px; }
+.bottom-left  { bottom: 65px; left: 115px; }
+.bottom-right { bottom: 65px; right: 115px; }
